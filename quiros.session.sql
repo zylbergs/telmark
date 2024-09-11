@@ -1,11 +1,3 @@
-SELECT * from orders;
-
-select * from performance;
-
-select buyerid,count("shopid") from "user" group by "buyerid";
-
-select * from "user" where "buyerid" = 2614;
-
 ALTER TABLE orders
 ALTER COLUMN shopid TYPE VARCHAR;
 
