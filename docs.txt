@@ -1,0 +1,59 @@
+here are the documentation of quiros project source code
+
+[structures]
+
+>batch_job
+"contains data output from main_batch.py output of batch processing to update incremental from data source"
+
+>checkpoint
+"contains pyspark metadata output from main_stream.py"
+
+>dwh
+"contain fake data generated from dev_main.ipyb for schema design and batch processing demo pipeline purpose"
+	>>cdr
+	"call detail record table"
+	>>customer
+	"customer table"
+	>>ip
+	"ip table"
+	>>prefix
+	"prfix table"
+	>>pricing
+	"pricing/product table"
+	>>supplier
+	"supplier table"
+	>>transaction
+	"transaction table"
+
+>Files for Technical Test -New
+"contains source data for this project"
+
+>output
+"contains output from cleaning and transforming maven table from maven.py"
+	>>raw
+	"contain transformed data from maven.py function transform_maven"
+	>>cleaned
+	"contain transformed and cleaned data from maven.py function clean_maven for prediction 	purpose"
+
+>transform
+"contain pipeline for transforming and cleaning purpose from maven data"
+
+>vali_tools
+"internal tooling for data inspection"
+
+>dev_main.ipynb
+"development/EDA notebook"
+
+>docs.txt
+"documentation"
+
+>main_batch.py
+"pipeline for batch processing update incremental for DWH demo"
+
+>main_stream.py
+"pipeline for stream processing ETL for DWH demo"
+
+>main.ipynb
+"main file to call all the microservice"
+quiros.session.sql
+"sql query for SQL Test"
